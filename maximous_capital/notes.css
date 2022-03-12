@@ -1,0 +1,13 @@
+.div-notes {
+    padding: 36px;
+    border-radius: 10px;
+}
+
+.box-notes {
+    background-color: rgb(73, 81, 93);
+    padding: 36px;
+}
+
+.box-notes ul {
+    list-style-type: circle;
+}
