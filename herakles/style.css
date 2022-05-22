@@ -12,6 +12,7 @@
 
 body {
     background: #121212;
+    display: grid;
 }
 
 .container {
