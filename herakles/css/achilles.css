@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #121212;
+    display: grid;
+    color: #fff;
+    justify-content: center;
+}
+
+nav {
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 60px;
+    width: auto;
+}
+
+
+/* EXERCISE CONTAINER */
+
+.all-exercises {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+}
+
+.exercises-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border: 2px solid #333;
+    height: 25vh;
+    justify-items: center;
+    align-items: center;
+    padding: 12px;
+
+    grid-template-rows: 0.5fr 1fr;
+}
+
+/* WEIGHTS */
+
+input {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    outline: none;
+}
+
+/* STOPWATCH */
+
+.container {
+    width: 100%;
+    height: 100%;
+    grid-column: span 2;
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.timerDisplay {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    /* font-family: 'Roboto mono', monospace; */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.buttons button {
+    flex: 1;
+    background-color: #205e94;
+    color: #fff;
+    border: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    min-width: 50px;
+    padding: 6px;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
+
+
+#startTimer {
+    background-color:  #20b380; 
+}
+
+#resetTimer {
+    background-color: #d23332;
+}
